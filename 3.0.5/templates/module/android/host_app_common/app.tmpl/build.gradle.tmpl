@@ -12,10 +12,11 @@ android {
 
     defaultConfig {
         applicationId "{{androidIdentifier}}.host"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 31
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -36,4 +37,11 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+}
+configurations {
+    all {
+        resolutionStrategy {
+            force "androidx.webkit:webkit:1.2.0"
+        }
+    }
 }
