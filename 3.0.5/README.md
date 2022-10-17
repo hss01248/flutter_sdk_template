@@ -4,16 +4,7 @@
 
 # 额外的操作
 
-host里的baseApp无法自动生成,需要手动粘贴:
 
-```java
-package com.xxx.xx.flutter.xxx_flutter.host;
-
-import androidx.multidex.MultiDexApplication;
-
-public class BaseApp extends MultiDexApplication {
-}
-```
 
 修改Android里flutter模块脚本的sdk版本:
 
