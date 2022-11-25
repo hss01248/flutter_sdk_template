@@ -2,9 +2,12 @@
 
 
 
+
+# override pkg:
+
+flutter3.0.5/packages/flutter_tools/template
+
 # 额外的操作
-
-
 
 修改Android里flutter模块脚本的sdk版本:
 
